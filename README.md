@@ -6,18 +6,17 @@ https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html
 ```
 MKLINK [[/D] | [/H] | [/J]] Link Target
 
-        /D      Creates a directory symbolic link.  Default is a file
-                symbolic link.
+        /D      Creates a directory symbolic link.  Default is a file symbolic link.
         /H      Creates a hard link instead of a symbolic link.
         /J      Creates a Directory Junction.
         Link    Specifies the new symbolic link name.
-        Target  Specifies the path (relative or absolute) that the new link
-                refers to.
+        Target  Specifies the path (relative or absolute) that the new link refers to.
 ```
 ## create cd with hardlinks
 then on bash (i.e. windows subsystem for linux and ubuntu) use
 ```
-genisoimage -v -J -r -V VOL_NAME -o output.iso DIRs
+genisoimage -v -J -f -r -V VOL_NAME -o output.iso DIRs
+genisoimage -v -J -T -f -r -V TEST -o test2.iso  ISO_test/
 ```
 https://linux.die.net/man/1/genisoimage
 
