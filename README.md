@@ -18,6 +18,7 @@ then on bash (i.e. windows subsystem for linux and ubuntu) use
 ```
 genisoimage -v -J -f -r -V VOL_NAME -o output.iso DIRs
 genisoimage -v -J -T -f -r -V TEST -o test2.iso  ISO_test/
+genisoimage  -J -T -f -r -joliet-long -V TEST -o test4.iso v3/
 ```
 https://linux.die.net/man/1/genisoimage
 
